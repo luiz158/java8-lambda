@@ -30,4 +30,13 @@ public class CalculatorTest {
 		assertEquals(15, sum, 0);
 	}
 	
+	@Test
+	public void shouldSubtractTwoValuesUsingLambdaExpression() throws Exception {
+		ICalculator<Integer> calculator = (Integer v1, Integer v2) -> v1 - v2;
+		
+		Integer sub = calculator.calculate(10, 5);
+		
+		assertEquals(5, sub, 0);
+	}
+	
 }
