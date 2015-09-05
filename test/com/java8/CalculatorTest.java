@@ -21,4 +21,13 @@ public class CalculatorTest {
 		assertEquals(15, sum, 0);
 	}
 	
+	@Test
+	public void shouldSumTwoValuesUsingLambdaExpression() throws Exception {
+		ICalculator<Integer> calculator = (Integer v1, Integer v2) -> v1 + v2;
+		
+		Integer sum = calculator.calculate(10, 5);
+		
+		assertEquals(15, sum, 0);
+	}
+	
 }
