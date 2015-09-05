@@ -27,7 +27,7 @@ public class TradeTest {
 	
 	@Test
 	public void shouldMergeTwoTradesUsingLambdaExpression() throws Exception {
-		IAddable<Trade> mergedTrade = (Trade t1, Trade t2) -> {
+		IAddable<Trade> mergedTrade = (t1, t2) -> {
 			t1.setQuantity(t1.getQuantity() + t2.getQuantity());
 			return t1;
 		};

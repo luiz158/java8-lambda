@@ -23,7 +23,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void shouldSumTwoValuesUsingLambdaExpression() throws Exception {
-		ICalculator<Integer> calculator = (Integer v1, Integer v2) -> v1 + v2;
+		ICalculator<Integer> calculator = (v1, v2) -> v1 + v2;
 		
 		Integer sum = calculator.calculate(10, 5);
 		
@@ -32,7 +32,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void shouldSubtractTwoValuesUsingLambdaExpression() throws Exception {
-		ICalculator<Integer> calculator = (Integer v1, Integer v2) -> v1 - v2;
+		ICalculator<Integer> calculator = (v1, v2) -> v1 - v2;
 		
 		Integer sub = calculator.calculate(10, 5);
 		

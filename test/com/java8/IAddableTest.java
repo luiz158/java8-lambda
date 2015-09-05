@@ -23,7 +23,7 @@ public class IAddableTest {
 	
 	@Test
 	public void shouldAddSomeStringUsingLambdaExpression() throws Exception {
-		IAddable<String> stringAdder = (String s1, String s2) -> s1 + " " + s2;
+		IAddable<String> stringAdder = (s1, s2) -> s1 + " " + s2;
 		
 		String fullName = stringAdder.add("Alexandre", "Gama");
 		
